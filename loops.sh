@@ -9,3 +9,16 @@ if [ $a -le $b ]; then
   else
     echo "b is bigger"
 fi
+
+
+#handle the input missing
+x=$1
+if [ -z "$x" ]; then
+echo "input is missing"
+fi
+
+if [ $a -le $b ]; then
+  echo "a is small"
+  else
+    echo "b is bigger"
+fi
